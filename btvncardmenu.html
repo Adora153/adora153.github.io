@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Techmaster</title>
+    <link rel="icon" href="https://techmaster.vn/resources/image/favicon.ico">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style-type: none;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header {
+            width: 100%;
+            height: 62px;
+            background-color: #30598c;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 30px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .header-logo {
+            width: 100px;
+            height: 37px;
+        }
+
+        .header-logo img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .header-nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .header-nav .nav {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav>li>a {
+            font-size: 15.2px;
+            color: white;
+        }
+
+        .nav>li {
+            margin: 0 10px;
+            line-height: 62px;
+        }
+
+        .nav>li:hover>a {
+            color: #6c757d;
+        }
+
+        .nav-shop>i {
+            color: aliceblue;
+            font-size: 20px;
+            position: relative;
+            margin: 0 15px;
+        }
+
+        .nav-user {
+            width: 35px;
+            height: 35px;
+            margin: 0 15px;
+        }
+
+        .nav-user img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+        }
+
+        .number-shop {
+            width: 15px;
+            height: 20px;
+            background-color: #26a69a;
+            position: absolute;
+            border-radius: 2px;
+            top: 6px;
+            right: 72px;
+            text-align: center;
+            color: #fff;
+        }
+
+        .nav-shop:hover,
+        .nav-user:hover {
+            cursor: pointer;
+            opacity: 0.8;
+        }
+
+        .body-course {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            margin-top: 62px;
+            background-color: #f4f7fa;
+        }
+
+        .list-course {
+            max-width: 1200px;
+            height: auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content:space-around;
+            align-items: center;
+
+        }
+
+        .course {
+            width: 350px;
+            height: auto;
+            margin: 30px 0;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+            border-radius: 5px;
+        }
+
+        .course-img {
+            width: 100%;
+            height: 200px;
+        }
+
+        .course-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+
+        }
+        .course-content {
+            padding: 16px 24px;
+            height: 140px;
+        }
+        .course-maincontent {
+            margin-bottom: 16px;
+            color: #464646;
+            font-size: 24px;
+            line-height: 1.5;
+        }
+        .course-subcontent {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #464646;
+        }
+        .course-subcontent i {
+            color: #ffd600;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="header-logo">
+                <img src="https://techmaster.vn/resources/image/logo-techmaster/white/white_200x74.png" alt="ANH">
+            </div>
+            <div class="header-nav">
+                <ul class="nav">
+                    <li><a href="">KHÓA HỌC
+                            <i class="fa-solid fa-caret-down"></i>
+                        </a></li>
+                    <li><a href="">SẢN PHẨM HỌC VIÊN</a></li>
+                    <li><a href="">KHAI GIẢNG</a></li>
+                    <li><a href="">BLOG</a></li>
+                    <li><a href="">TRẢI NGHIỆM</a></li>
+                    <li><a href="">CHÚNG TÔI
+                            <i class="fa-solid fa-caret-down"></i>
+                        </a></li>
+
+
+                </ul>
+                <div class="nav-shop">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <div class="number-shop">0</div>
+                </div>
+
+
+                <div class="nav-user">
+                    <img src="https://techmaster.vn/resources/image/anonymous-user.jpg" alt="user">
+                </div>
+
+
+            </div>
+        </div>
+        <div class="body-course">
+            <div class="list-course">
+                <div class="course">
+                    <div class="course-img">
+                        <img src="https://techmaster.vn/resources/image/thumbnail.jpg" alt="HINH ANH KHOA HOC">
+                    </div>
+                    <div class="course-content">
+                        <div class="course-maincontent">
+                            Data Structure - Algorithm - LeetCode
+                        </div>
+                        <div class="course-subcontent">
+                            <div>
+                                Trực tuyến
+                            </div>
+                            <div>
+                                5 <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="course">
+                    <div class="course-img">
+                        <img src="https://media.techmaster.vn/api/static/36/uhWHezPC" alt="HINH ANH KHOA HOC2">
+                    </div>
+                    <div class="course-content">
+                        <div class="course-maincontent">
+                            Luyện thi FE
+                        </div>
+                        <div class="course-subcontent">
+                            <div>
+                                Trực tuyến
+                            </div>
+                            <div>
+                                5 <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="course">
+                    <div class="course-img">
+                        <img src="https://media.techmaster.vn/api/fileman/Uploads/Java/banner-javabasic.png" alt="HINH ANH KHOA HOC 3">
+                    </div>
+                    <div class="course-content">
+                        <div class="course-maincontent">
+                            Học lập trình Java trực tuyến
+                        </div>
+                        <div class="course-subcontent">
+                            <div>
+                                Trực tuyến
+                            </div>
+                            <div>
+                                5 <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="course">
+                    <div class="course-img">
+                        <img src="https://media.techmaster.vn/api/static/8028/bpfneoc51co8tcg6lek0" alt="HINH ANH KHOA HOC 4">
+                    </div>
+                    <div class="course-content">
+                        <div class="course-maincontent">
+                            Lập trình web với Spring Boot online
+                        </div>
+                        <div class="course-subcontent">
+                            <div>
+                                Trực tuyến
+                            </div>
+                            <div>
+                                5 <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="course">
+                    <div class="course-img">
+                        <img src="https://media.techmaster.vn/api/fileman/Uploads/users/5463/giaithuat-thumnail.png" alt="HINH ANH KHOA HOC 4">
+                    </div>
+                    <div class="course-content">
+                        <div class="course-maincontent">
+                            Nhập môn lập trình - giải thuật cơ bản
+                        </div>
+                        <div class="course-subcontent">
+                            <div>
+                                Trực tuyến
+                            </div>
+                            <div>
+                                5 <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="course">
+                    <div class="course-img">
+                        <img src="https://media.techmaster.vn/api/static/8028/bqa348s51cocm3n1ubq0" alt="HINH ANH KHOA HOC 5">
+                    </div>
+                    <div class="course-content">
+                        <div class="course-maincontent">
+                            Lập trình di động IOS Swift online
+                        </div>
+                        <div class="course-subcontent">
+                            <div>
+                                Trực tuyến
+                            </div>
+                            <div>
+                                5 <i class="fa-solid fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+</body>
